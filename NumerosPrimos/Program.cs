@@ -4,7 +4,7 @@ int[] primos=new int[5];
 int numPrimo = 0,cont;
 for (int i = 1; numPrimo < 5; i++) {
     cont = 0;
-	for (int j = 1; j < i; j++)
+	for (int j = 1; j <= i; j++)
 	{
 		if (i % j == 0) {
 			cont++;
@@ -14,7 +14,12 @@ for (int i = 1; numPrimo < 5; i++) {
 	}
 	if (cont == 2)
 	{
-		primos[numPrimo] = i;
+        
+        primos[numPrimo] = i;
+		numPrimo++;
 	}
 }
-Console.WriteLine(primos.ToString);
+foreach (int i in primos) {
+    Console.WriteLine(i);
+}
+
