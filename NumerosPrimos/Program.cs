@@ -8,13 +8,10 @@ for (int i = 1; numPrimo < 5; i++) {
 	{
 		if (i % j == 0) {
 			cont++;
-
         }
-		
 	}
 	if (cont == 2)
-	{
-        
+	{ 
         primos[numPrimo] = i;
 		numPrimo++;
 	}
